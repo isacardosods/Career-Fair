@@ -1,0 +1,45 @@
+[
+    {
+        "name": "Roda Gigante",
+        "class": "attraction",
+        "id": "RODAGIGANTE",
+        "event": "click",
+        "url": "https://www.corinthians.com.br"
+
+    },
+    {
+        "name": "Máquina de Garra",
+        "class": "attraction",
+         "id": "ARVORESEMAQUINA",
+        "event": "click",
+        "url": "https://www.corinthians.com.br"
+    },
+    {
+        "name": "Loja",
+        "class": "attraction",
+        "id": "LOJA",
+        "event": "click",
+        "url": "https://www.corinthians.com.br"
+    },
+    {
+        "name": "Circo",
+        "class": "attraction",
+         "id": "CIRCO",
+        "event": "click",
+        "url": "https://www.corinthians.com.br"
+    },
+    {
+        "name": "Tiro ao Alvo",
+        "class": "attraction",
+         "id": "TIROAOALVO",
+        "event": "click",
+        "url": "https://www.corinthians.com.br"
+    },
+    {
+        "name": "Montanha Russa",
+        "class": "attraction",
+         "id": "MONTANHARUSSA",
+        "event": "click",
+        "url": "https://www.corinthians.com.br"
+    }
+]
