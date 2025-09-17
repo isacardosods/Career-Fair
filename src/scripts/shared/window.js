@@ -1,0 +1,1 @@
+//aqui será feito o redirecionamento para os minigames
