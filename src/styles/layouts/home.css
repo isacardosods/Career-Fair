@@ -1,0 +1,60 @@
+@import url(../global.css);
+
+body {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+    to bottom right,
+    #f2cb05 0%,
+    #f29c14 40%,
+    #f24949 75%
+  );
+}
+
+#background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+main {
+  width: 100%;
+  position: relative;
+}
+
+main svg {
+  width: 100%;
+  margin-top: 10vh;
+}
+
+.textbox {
+  width: 40%;
+  top: 15vh;
+  left: 5vw;
+  position: absolute;
+  color: var(--text-color--);
+}
+
+#title {
+    font-weight: 700;
+    font-family: "Jersey", monospace;
+    letter-spacing: 5px;
+    font-size: 8em;
+    margin-bottom: 2vh;
+}
+#subtitle {
+    font-weight: 500;
+    font-family: "JetBrains", monospace;
+    font-size: 1.2em;
+}
+
+#LOJA,
+#RODAGIGANTE,
+#ARVORESEMAQUINA,
+#CIRCO,
+#TIROAOALVO,
+#MONTANHARUSSA {
+  cursor: pointer;
+}
+
