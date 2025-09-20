@@ -3,7 +3,6 @@
 body {
   position: relative;
   background-repeat: no-repeat;
-  background-size: cover;
   background-image: linear-gradient(
     to bottom right,
     #f2cb05 0%,
@@ -18,19 +17,19 @@ body {
   position: absolute;
 }
 
-main {
+main{
   width: 100%;
+  margin-top: 10vh;
   position: relative;
 }
 
 main svg {
-  width: 100%;
-  margin-top: 10vh;
+  margin-bottom: -0.45vh;
 }
 
 .textbox {
   width: 40%;
-  top: 15vh;
+  top: 20vh;
   left: 5vw;
   position: absolute;
   color: var(--text-color--);
@@ -49,12 +48,28 @@ main svg {
     font-size: 1.2em;
 }
 
+footer{
+  width: 100%;
+  height: 15vh;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--footer-color--);
+  color: var(--text-color--);
+  font-family: "JetBrains", monospace;
+  font-weight: 700;
+}
+
 #LOJA,
-#RODAGIGANTE,
 #ARVORESEMAQUINA,
 #CIRCO,
 #TIROAOALVO,
-#MONTANHARUSSA {
+#MONTANHARUSSA{
   cursor: pointer;
+  filter: brightness(10%);
+  opacity: 80%;
 }
 

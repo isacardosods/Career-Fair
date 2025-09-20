@@ -1,18 +1,10 @@
 [
     {
-        "name": "Roda Gigante",
-        "class": "attraction",
-        "id": "RODAGIGANTE",
-        "event": "click",
-        "url": "https://www.corinthians.com.br"
-
-    },
-    {
         "name": "Máquina de Garra",
         "class": "attraction",
-         "id": "ARVORESEMAQUINA",
+         "id": "MAQUINADEGARRA",
         "event": "click",
-        "url": "https://www.corinthians.com.br"
+        "url": "https://www.youtube.com.br"
     },
     {
         "name": "Loja",
