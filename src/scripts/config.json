@@ -2,7 +2,7 @@
     {
         "name": "Máquina de Garra",
         "class": "attraction",
-         "id": "MAQUINADEGARRA",
+         "id": "MAQUINA",
         "event": "click",
         "url": "https://www.youtube.com.br"
     },
