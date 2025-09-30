@@ -22,3 +22,31 @@
   --text-color--: #fff;
   --footer-color--: #000;
 }
+
+@keyframes moverDireita{
+    0%{
+        transition: .2s linear;
+        transform: translateX(-50vw);
+        position: relative;
+    }
+            
+    100%{
+        transform: translateX(10vw);
+        transition: .2s linear;
+    }
+}
+
+
+@keyframes moverEsquerda{
+    0%{
+        position: relative;
+        transition: .2s linear;
+        transform: translateX(50vw);
+    }
+            
+    100%{
+        transform: translateX(-10vw);
+        transition: .2s linear;
+    }
+            
+}
