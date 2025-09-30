@@ -21,6 +21,7 @@
 :root {
   --text-color--: #fff;
   --footer-color--: #000;
+  --pop-color--: #3c2d73;
 }
 
 @keyframes moverDireita{

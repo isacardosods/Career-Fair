@@ -17,7 +17,7 @@ body {
   position: absolute;
 }
 
-main{
+main {
   width: 100%;
   position: relative;
 }
@@ -38,19 +38,19 @@ main svg {
 }
 
 #title {
-    font-weight: 700;
-    font-family: "Jersey", monospace;
-    letter-spacing: 5px;
-    font-size: 8em;
-    margin-bottom: 2vh;
+  font-weight: 700;
+  font-family: "Jersey", monospace;
+  letter-spacing: 5px;
+  font-size: 8em;
+  margin-bottom: 2vh;
 }
 #subtitle {
-    font-weight: 500;
-    font-family: "JetBrains", monospace;
-    font-size: 1.2em;
+  font-weight: 500;
+  font-family: "JetBrains", monospace;
+  font-size: 1.2em;
 }
 
-footer{
+footer {
   width: 100%;
   height: 15vh;
 
@@ -69,7 +69,7 @@ footer{
 #MAQUINA,
 #CIRCO,
 #TIROAOALVO,
-#MONTANHARUSSA{
+#MONTANHARUSSA {
   cursor: pointer;
   filter: brightness(5%);
   opacity: 85%;
@@ -108,9 +108,9 @@ footer{
   left: 50vw;
 } */
 
-.pop-container{
-  width: 30vw;
-  height: 35vh;
+.pop-container {
+  width: 35vw;
+  height: 35vh auto;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -122,72 +122,102 @@ footer{
 
   border-radius: 10px;
   padding: 30px;
-  background-color: red;
+  background-color: var(--pop-color--);
+  opacity: 85%;
 }
 
-@media (max-width: 1500px){
-  .textbox{
+.cotton-text {
+  margin-top: 2vh;
+  text-align: center;
+  font-size: 1.3rem;
+  color: var(--text-color--);
+  font-family: "JetBrains", monospace;;
+}
+
+.cotton-img{
+  width: 10vw;
+  margin-top: 2vh;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--text-color--);
+  transition: color 0.3s ease-in-out;
+}
+
+.close-btn:hover{
+   color: #797979;
+}
+
+@media (max-width: 1500px) {
+  .textbox {
     width: 45%;
   }
 
-  #title{
+  #title {
     font-size: 6em;
   }
 
-  #subtitle{
+  #subtitle {
     font-size: 1em;
   }
 
-  main svg{
+  main svg {
     margin-bottom: -0.75vh;
   }
 }
 
-@media (max-width: 800px){
-  .textbox{
+@media (max-width: 800px) {
+  .textbox {
     width: 50%;
   }
 
-  #title{
+  #title {
     font-size: 4.5em;
   }
 
-  #subtitle{
+  #subtitle {
     font-size: 0.8em;
   }
 }
 
-@media (max-width: 480px){
-  .textbox{
+@media (max-width: 480px) {
+  .textbox {
     width: 50%;
     top: 10vh;
   }
 
-  #title{
+  #title {
     font-size: 3em;
   }
 
-  #subtitle{
+  #subtitle {
     font-size: 0.5em;
   }
 
-  main svg{
+  main svg {
     margin-bottom: -0.8vh;
   }
 
-  footer{
+  footer {
     display: none;
   }
 }
 
-@media (max-width: 400px){
-  #title{
+@media (max-width: 400px) {
+  #title {
     font-size: 2em;
   }
 }
 
-@media (max-width: 350px){
-  #subtitle{
+@media (max-width: 350px) {
+  #subtitle {
     font-size: 0.4rem;
   }
 }

@@ -1,4 +1,4 @@
-import {createPop} from './common/candy.js';
+import { createPop} from './common/candy.js';
 
 const things = [];
 
@@ -7,17 +7,27 @@ const fetchSvg = async (image) => {
     const res = await fetch(image.src);
     const svgText = await res.text();
 
-    const span = document.createElement("span");
+    const span = document.createElement('span');
     span.innerHTML = svgText;
 
-    const inlineSvg = span.querySelector("svg");
+    const inlineSvg = span.querySelector('svg');
     if (inlineSvg) {
+      if (image.id) inlineSvg.id = image.id;
+      if (image.title) inlineSvg.setAttribute('title', image.title);
+      if (image.alt) inlineSvg.setAttribute('aria-label', image.alt);
+
+      Array.from(image.classList).forEach(cls => inlineSvg.classList.add(cls));
+      inlineSvg.classList.add('icon-svg');
+
+      Array.from(image.attributes).forEach(attr => {
+        if (attr.name.startsWith('data-')) inlineSvg.setAttribute(attr.name, attr.value);
+      });
+
+      inlineSvg.setAttribute('data-loaded', 'true');
       image.parentNode.replaceChild(inlineSvg, image);
     }
-
-    await getActions();
   } catch (err) {
-    console.error("erro ao carregar svg:", err);
+    console.error('erro ao carregar svg:', err);
   }
 };
 
@@ -31,11 +41,11 @@ const getActions = async () => {
       return;
     }
 
-    el.addEventListener(item.event || "click", () => {
+    el.addEventListener(item.event || 'click', () => {
       if (item.href) {
         window.location = item.href;
         console.log(`você foi direcionado para ${item.href}!`);
-      } else if (item.id == "LOJA") {
+      } else if (item.id === 'LOJA') {
         createPop();
       }
     });
@@ -44,16 +54,18 @@ const getActions = async () => {
 
 const getThings = async () => {
   try {
-    const res = await fetch("src/scripts/config.json");
+    const res = await fetch('src/scripts/config.json');
     const data = await res.json();
     things.push(...data);
   } catch (err) {
-    console.error("erro ao carregar config.json:", err);
+    console.error('erro ao carregar config.json:', err);
   }
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll("img").forEach((img) => {
-    img.addEventListener("load", () => fetchSvg(img));
-  });
+document.addEventListener('DOMContentLoaded', async () => {
+  const imgs = document.querySelectorAll('img[data-svg]');
+  await Promise.all(Array.from(imgs).map(img => fetchSvg(img).catch(err => {
+    console.error('falha ao processar svg', img, err);
+  })));
+  await getActions();
 });
