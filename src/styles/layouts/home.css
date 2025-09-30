@@ -75,6 +75,41 @@ footer{
   opacity: 85%;
 }
 
+
+.space-cort{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cortina{
+  position: relative;
+  width: 49vw;
+  height: 100vh;
+  background-image: url(../../assets/img/cortina.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#cort1{
+  right: 50vw;
+  animation: moverEsquerda 2s cubic-bezier(1, 0.05, 1, 0.9);
+  animation-delay: 5ms;
+}
+#cort2{
+  animation: moverDireita 2s cubic-bezier(1, 0.05, 1, 0.9);
+  animation-delay: 5ms;
+  left: 50vw;
+}
+
 @media (max-width: 1500px){
   .textbox{
     width: 45%;
