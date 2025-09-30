@@ -4,34 +4,33 @@
         "class": "attraction",
          "id": "MAQUINA",
         "event": "click",
-        "url": "https://www.youtube.com.br"
+        "href": "src/pages/"
     },
     {
         "name": "Loja",
         "class": "attraction",
         "id": "LOJA",
-        "event": "click",
-        "url": "https://www.corinthians.com.br"
+        "event": "click"
     },
     {
         "name": "Circo",
         "class": "attraction",
          "id": "CIRCO",
         "event": "click",
-        "url": "https://www.corinthians.com.br"
+        "href": "src/pages/"
     },
     {
         "name": "Tiro ao Alvo",
         "class": "attraction",
          "id": "TIROAOALVO",
         "event": "click",
-        "url": "https://www.corinthians.com.br"
+        "href": "src/pages/"
     },
     {
         "name": "Montanha Russa",
         "class": "attraction",
          "id": "MONTANHARUSSA",
         "event": "click",
-        "url": "https://www.corinthians.com.br"
+        "href": "src/pages/"
     }
 ]

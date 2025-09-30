@@ -1,3 +1,5 @@
+import {createPop} from './common/candy.js';
+
 const things = [];
 
 const fetchSvg = async (image) => {
@@ -30,11 +32,13 @@ const getActions = async () => {
     }
 
     el.addEventListener(item.event || "click", () => {
-      if (item.url) {
-        window.open(item.url, "_blank");
-        console.log(`você foi direcionado para ${item.url}!`)
+      if (item.href) {
+        window.location = item.href;
+        console.log(`você foi direcionado para ${item.href}!`);
+      } else if (item.id == "LOJA") {
+        createPop();
       }
-    }); 
+    });
   });
 };
 
@@ -48,3 +52,8 @@ const getThings = async () => {
   }
 };
 
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("img").forEach((img) => {
+    img.addEventListener("load", () => fetchSvg(img));
+  });
+});

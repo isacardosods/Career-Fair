@@ -26,7 +26,7 @@ main svg {
   width: 100%;
   height: auto;
   margin-top: 10vh;
-  margin-bottom: -0.45vh;
+  margin-bottom: -0.5vh;
 }
 
 .textbox {
@@ -75,8 +75,7 @@ footer{
   opacity: 85%;
 }
 
-
-.space-cort{
+/* .space-cort{
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -107,6 +106,23 @@ footer{
   animation: moverDireita 2s cubic-bezier(1, 0.05, 1, 0.9);
   animation-delay: 5ms;
   left: 50vw;
+} */
+
+.pop-container{
+  width: 30vw;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 10px;
+  padding: 30px;
+  background-color: red;
 }
 
 @media (max-width: 1500px){
