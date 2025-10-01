@@ -162,7 +162,8 @@ class Game {
             this.generatTwoBallon(0, 500)
         }
         if(this.boss_life <= 0){
-            alert('voce venceu!')
+            alert('Parabéns! Você venceu! :)')
+            window.location = '../../pages/shooting.html'
         }
         // PRECISO FAZER OS VERIFICADORES DE GERADORES DE BALAO DE ACORDO COM ACADA NIVEL ATINGIDO
     }

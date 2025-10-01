@@ -1,263 +1,260 @@
-*{padding: 0;margin: 0;outline: none;user-select: none; font-family: 'Jersey', Arial;}
-
-@font-face {
-    font-family: 'Jersey';
-    src: url('../font/Jersey_10/Jersey10-Regular.ttf');
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  user-select: none;
+  font-family: "Jersey", monospace;
 }
 
-@keyframes aparecerAlvo{
-    0%{
-        /* background-image: url(../img/alvo-quebrado.svg);
+@keyframes aparecerAlvo {
+  0% {
+    /* background-image: url(../img/alvo-quebrado.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-size:contain; */
-        opacity: 0;
-        transition: .2s linear;
-        z-index: 11;
-    }
+    opacity: 0;
+    transition: 0.2s linear;
+    z-index: 11;
+  }
 
-    100%{
-        opacity: 1;
-        /* transition: .2s linear;      
+  100% {
+    opacity: 1;
+    /* transition: .2s linear;      
         background-image: url(../img/alvo-quebrado.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-size:contain; */
-        
-    }
-    
+  }
 }
 
-body{
-    overflow: hidden;
-
+body {
+  overflow: hidden;
 }
 
-button{
-    transition: .2s linear;
+button {
+  transition: 0.2s linear;
 }
 
-
-button:hover{
-    cursor: pointer;
-    transition: .2s linear;
-    transform: translateY(-5px);
+button:hover {
+  cursor: pointer;
+  transition: 0.2s linear;
+  transform: translateY(-5px);
 }
 
-button:active{
-    cursor: pointer;
-    transition: .2s linear;
-    transform: translateY(6px);
+button:active {
+  cursor: pointer;
+  transition: 0.2s linear;
+  transform: translateY(6px);
 }
-header#info{
-    z-index: 10;
-}
-
-main:hover{
-    cursor: url('../../assets/img/mira-fechada.png') 47 45, auto;
-    transition: 0.3s linear;
+header#info {
+  z-index: 10;
 }
 
-main:active{
-    transition: 0.3s linear;
-    cursor: url('../../assets/img/mira-aberta.png') 57 55, auto;
-}
-        
-    
-.target{
-    z-index: 1;
-    animation: 1s aparecerAlvo;
-}
-.container{
-    background-color: #F3E0C1;
-    width: 100vw;
-    height: 100vh;
+main:hover {
+  cursor: url("../../assets/img/mira-fechada.png") 47 45, auto;
+  transition: 0.3s linear;
 }
 
-.container .sides{
-    /* background-color: blue; */
-    height: 95%;
-    width: 100%;
-
-    display: flex;
-
-    flex-direction: row;
-    justify-content: space-between;
+main:active {
+  transition: 0.3s linear;
+  cursor: url("../../assets/img/mira-aberta.png") 57 55, auto;
 }
 
-.container .sides .side1, .side2{
-    height: 100%;
-    width: 6%;
-    background-color: #B91E12;
-    /* position: absolute; */
-    z-index: 10;
+.target {
+  z-index: 1;
+  animation: 1s aparecerAlvo;
+}
+.container {
+  background-color: #f3e0c1;
+  width: 100vw;
+  height: 100vh;
 }
 
-.container .sides .side1 nav, .side2 nav{
-    height: 100%;
-    width: 75%;
-    background-color: #FF3E19;
+.container .sides {
+  /* background-color: blue; */
+  height: 95%;
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.side1 nav{
-    justify-self: end;
+.container .sides .side1,
+.side2 {
+  height: 100%;
+  width: 6%;
+  background-color: #b91e12;
+  /* position: absolute; */
+  z-index: 10;
 }
 
-.container .main-content{
-    background: linear-gradient(  
-        135deg, 
-        #F2CB05 0%, 
-        #F29C14 39%, 
-        #F24949 75%
-    );
-    height: 100%;
-    width: calc(100% - 12%);
-
-    position: relative;
+.container .sides .side1 nav,
+.side2 nav {
+  height: 100%;
+  width: 75%;
+  background-color: #ff3e19;
 }
 
-.container .main-content #target-space{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    /* background-color: antiquewhite; */
+.side1 nav {
+  justify-self: end;
 }
 
-.container .main-content #target-space .content-target{
-    /* background-color: blueviolet; */
-    height: calc(100% - 8%);
-    width: 100%;
+.container .main-content {
+  background: linear-gradient(135deg, #f2cb05 0%, #f29c14 39%, #f24949 75%);
+  height: 100%;
+  width: calc(100% - 12%);
 
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
+  position: relative;
 }
 
-.container .main-content #target1, #target2{
-    height: 1%;
-    width: 70%;
-    /* background-color: aqua; */
-    z-index: 1;
-
-    display: flex;
-    align-items: center;
+.container .main-content #target-space {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  /* background-color: antiquewhite; */
 }
 
-svg{
-    transition: 0.2s;
-    height: auto;
-    z-index: 1;
+.container .main-content #target-space .content-target {
+  /* background-color: blueviolet; */
+  height: calc(100% - 8%);
+  width: 100%;
 
-    position: absolute;
-    z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
-.container .main-content .footer-style{
-    width: 100%;
-    height: 13.5%;
-    background-color: #F3E0C1;
-    position: absolute;
-    z-index: 2;
+.container .main-content #target1,
+#target2 {
+  height: 1%;
+  width: 70%;
+  /* background-color: aqua; */
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
 }
 
-.container .main-content .background-vetor{
-    left: 1%;
-    position: absolute;
-    pointer-events: none
+svg {
+  transition: 0.2s;
+  height: auto;
+  z-index: 1;
+
+  position: absolute;
+  z-index: 2;
 }
 
-.container .main-content .content-target{
-    display: flex;
+.container .main-content .footer-style {
+  width: 100%;
+  height: 13.5%;
+  background-color: #f3e0c1;
+  position: absolute;
+  z-index: 2;
 }
 
-#info{
-    position: fixed;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    flex-direction: column;
-    height: auto;
-    width: 15vw;
-    top: 2%;
-    right: 2%;
-    background-color: azure;
-    border-radius: 15px;
-    z-index: 11;
+.container .main-content .background-vetor {
+  left: 1%;
+  position: absolute;
+  pointer-events: none;
 }
 
-#lvl, #points, #bullets, #bossLife{
-    /* background-color: red; */
-
-    /* color: white; */
-    height: 50%;
-    width: 100%;
-
-    display: flex;
-    justify-content: end;
-    align-items: end;
-
-    font-size: 3em;
-    padding: 1px;
+.container .main-content .content-target {
+  display: flex;
 }
 
-.menuRestart{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 15vw;
-    height: 20vh;
-    z-index: 12;
-    padding: 10px;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    background-color:#48234F;
-    display: none;
-    border-radius: 10px;
+#info {
+  position: fixed;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  width: 15vw;
+  top: 2%;
+  right: 2%;
+  background-color: azure;
+  border-radius: 15px;
+  z-index: 11;
 }
 
-.menuRestart p{
-    z-index: 12;
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-    font-size: 2em;
-    background-color:#48234F;
-    text-align: center;
-    font-family: sans-serif;
-    color: white;
+#lvl,
+#points,
+#bullets,
+#bossLife {
+  /* background-color: red; */
+
+  /* color: white; */
+  height: 50%;
+  width: 100%;
+
+  display: flex;
+  justify-content: end;
+  align-items: end;
+
+  font-size: 3em;
+  padding: 1px;
 }
 
-.menuRestart button{
-    margin-top: 20px;
-    z-index: 12;
-    width: 10vw;
-    height: 5vh;
-    font-size: 1.5em;
-    background-color: #48234F;
-    color: white;
-    border: 2px solid white;
-    border-radius: 10px;
+.menuRestart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 15vw;
+  height: 20vh;
+  z-index: 12;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: #48234f;
+  display: none;
+  border-radius: 10px;
 }
 
-.main-content .target-space .content-target .boss{
-    z-index: 1;
-    position: absolute;
-    transition: 2s;
+.menuRestart p {
+  z-index: 12;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  font-size: 2em;
+  background-color: #48234f;
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
 }
 
-.container .start-menu{
-    position: fixed;
-    left: 20%;
-    top: 10%;
-    z-index: 15;
+.menuRestart button {
+  margin-top: 20px;
+  z-index: 12;
+  width: 10vw;
+  height: 5vh;
+  font-size: 1.5em;
+  background-color: #48234f;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
 }
 
-.container .start-menu .start-button{
-    cursor: pointer;
+.main-content .target-space .content-target .boss {
+  z-index: 1;
+  position: absolute;
+  transition: 2s;
+}
+
+.container .start-menu {
+  position: fixed;
+  left: 20%;
+  top: 10%;
+  z-index: 15;
+}
+
+.container .start-menu .start-button {
+  cursor: pointer;
 }
