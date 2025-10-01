@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/layouts/mountain.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+
+    <title>FlicFlic Game</title>
+</head>
+<body>
+
+    <section class="ganhou">
+        <div style="display: flex; align-items:  center; flex-direction: column;">
+            <p>Sensacional!</p>
+            <p>Jogo Finalizado</p>
+        </div>
+        <button>Sair</button>
+    </section>
+
+   <section id="menu">
+        <p>FlicFlic</p>
+        <p>Aperte a tecla "space" para pular </p>
+        <div>
+            <button onclick="StartGame()">Jogar</button>
+            <button onclick="criadores()" >Criadores</button>
+        </div>
+    </section>
+    
+    <section id="criadores">
+        <p style="font-size: 4em;">Criadores</p>
+        <div>
+            <p><b>Design:</b> Mariana Mota</p>
+            <p><b>Code:</b>­­ ­­ ­   Marcus Barbosa</p>
+        </div>
+        <button onclick="voltarMenu()">Volte</button>
+    </section>
+
+    <div class="corzinha"></div>
+    <div id="opacidadeBaixa"> 
+
+
+<div class="paisagem">
+    <img class="cenarioUm" src="../assets/img/fundoroda.png" alt="">
+    
+</div>
+    <section id="jogo">
+
+
+
+        <div class="perdeu">
+            <p>Perdeste!</p>
+            <p><b style="color: rgb(233, 216, 121);">💡DICA:</b> Tente pular com certa antecedência pois o personagem fica bastante tempo no ar!</p>
+            <button class="restart" > 
+                Reiniciar
+            </button>
+        </div>
+
+
+
+        <div class="score">
+            <p id="pontos">0</p>
+        </div>
+
+        <div class="player"></div>
+        <div class="obstaculo"></div>
+        <div class="chao"></div>
+
+    </section>
+
+
+    <section id="foraDoJogo">
+        <div class="trilhos">
+            <img class="trilho"  src="../assets/img/trilhoo.png" alt="">
+            <img class="trilho"  src="../assets/img/trilhoo.png" alt="">
+        </div>
+    </section>
+</div>
+   
+</body>
+<script src="../scripts/common/mountain.js"></script>
+</html>

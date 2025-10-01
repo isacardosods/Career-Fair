@@ -31,6 +31,6 @@
         "class": "attraction",
          "id": "MONTANHARUSSA",
         "event": "click",
-        "href": "src/pages/"
+        "href": "src/pages/mountain.html"
     }
 ]

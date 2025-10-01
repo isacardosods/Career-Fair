@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+}
+
+.corzinha{
+    background:linear-gradient(#FFEE00,#F7AB4A,#E6382E) ;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+#menu{
+    position: absolute;
+    z-index: 4;
+    top: 25%;
+    left: 33%;
+    width: 35vw;
+    height:60vh;
+    background-color:rgba(255, 255, 255, 0.493);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+#menu p {
+    font-size: 7.4em;
+    
+    letter-spacing: 14px;
+
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+#menu p:nth-child(2){
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+#menu div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu div button {
+    width: 25vw;
+    height: 9.4vh;
+    margin: 15px;
+    border: 0.4px solid rgba(54, 54, 54, 0.543);
+    border-radius: 5px;
+    background-color:white ;
+    border: #FF7700 1.3px solid;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 2.5em;
+    letter-spacing: 3px; 
+    cursor: pointer;
+}
+
+#criadores{
+    position: absolute;
+    z-index: 4;
+    top: 25%;
+    left: 33%;
+    width: 35vw;
+    height:60vh;
+    background-color:rgba(255, 255, 255, 0.493);
+    
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+
+
+#criadores  p {
+    font-size: 2em;
+    
+    letter-spacing: 3px;
+
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+#criadores button{
+        width: 25vw;
+    height: 9.4vh;
+    margin: 15px;
+    border: 0.4px solid rgba(54, 54, 54, 0.543);
+    border-radius: 5px;
+    background-color:white ;
+    border: #FF7700 1.3px solid;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 2.5em;
+    letter-spacing: 3px; 
+    cursor: pointer;
+}
+
+#opacidadeBaixa{
+    opacity: 0.07;
+}
+
+.paisagem {
+    width: 300vw;
+    height: 110vh;
+   
+    top: 0%;
+    opacity: 0.93;
+}
+
+.paisagem img{
+    position: absolute;
+}
+
+.paisagem img:nth-child(1){
+    position: absolute;
+    z-index: 0;
+    width: 100vw;
+    
+}
+
+#jogo{
+    z-index: 1;
+    width: 100vw;
+    height: 50vh;
+}
+
+.score{
+    background-color: #080808;
+    width: 8vw;
+    border-radius: 10px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 90%;
+    top: 3%;
+}
+
+.score p{
+    font-size: 2em;
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.chao{
+    width: 100vw;
+    height: 1vh;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+}
+
+.player{ 
+    height: 15vh;
+    width: 35vh;
+    top: 34%;
+    left: 5%;
+    z-index: 3;
+    position: absolute;
+    background: url(../../assets/img/player.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.animP{
+    animation: pulo 0.6s linear  ;
+}
+
+
+@keyframes pulo {
+    0%{
+        top: 34%;;
+    }
+
+    7%{
+        top: 19%;
+    }
+
+    20%{
+        top: 17%;
+    }
+    70%{
+        top: 17%;
+    }
+
+    100%{
+        top: 34%;
+    }
+
+}
+
+.obstaculo{
+    height: 12vh;
+    width: 12vh;
+    z-index: 2;
+    position: absolute;
+    top: 38%;
+    left: 100%;
+    background: url(../../assets/img/obstaculoUm.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ganhou{
+    position: absolute;
+    z-index: 4;
+    top: 20%;
+    left: 33%;
+    width: 40vw;
+    height:60vh;
+    background-color:rgba(255, 255, 255, 0.897);
+    border: black 2px solid;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ganhou p {
+    font-size: 6em;
+    
+    letter-spacing: 4px;
+
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+.ganhou p:nth-child(2){
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+
+.ganhou button{
+    width: 20vw;
+    height: 9.4vh;
+    margin: 15px;
+    border: 0.4px solid rgba(54, 54, 54, 0.543);
+    border-radius: 5px;
+    background-color:white ;
+    border: #FF7700 1.3px solid;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 2.5em;
+    letter-spacing: 3px; 
+    cursor: pointer;
+}
+
+.perdeu{
+    position: absolute;
+    z-index: 4;
+    top: 20%;
+    left: 33%;
+    width: 40vw;
+    height:60vh;
+    background-color:rgba(255, 255, 255, 0.897);
+    border: black 2px solid;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+ 
+}
+
+.perdeu p{
+    font-size: 6em;
+    
+    letter-spacing: 10px;
+
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+.perdeu p:nth-child(2){
+    font-size: 2em;
+    letter-spacing: 2px;
+    width: 35vw;
+}
+
+.perdeu button{
+    width: 20vw;
+    height: 9.4vh;
+    margin: 15px;
+    border: 0.4px solid rgba(54, 54, 54, 0.543);
+    border-radius: 5px;
+    background-color:white ;
+    border: #FF7700 1.3px solid;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 2.5em;
+    letter-spacing: 3px; 
+    cursor: pointer;
+}
+
+#foraDoJogo{
+ z-index: 0;
+ width: 100vw;
+ height: 50vh;
+ 
+}
+
+.trilhos img{
+width: 115vw;
+height: 130vh;
+position: absolute;
+top: -28.5%;
+
+}
+
+.trilhos img:nth-child(1){
+left: -1%;
+}
+
+.trilhos img:nth-child(2){
+left: 99%;
+}
+
+
