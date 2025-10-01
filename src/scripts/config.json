@@ -24,7 +24,7 @@
         "class": "attraction",
          "id": "TIROAOALVO",
         "event": "click",
-        "href": "src/pages/"
+        "href": "src/pages/shooting.html"
     },
     {
         "name": "Montanha Russa",
