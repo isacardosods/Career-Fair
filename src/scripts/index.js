@@ -1,4 +1,4 @@
-import { createPop } from './common/candy.js';
+import { createPop } from './common/home.js';
 
 const things = [];
 

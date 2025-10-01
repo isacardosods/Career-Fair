@@ -1,3 +1,11 @@
+const removeCort = (cort) =>{
+  cort = document.querySelector('.space-cort');
+  cort.style.display = 'none';
+};
+
+window.setTimeout(removeCort, 2450)
+
+
 export function createPop() {
   const escope = document.body;
 

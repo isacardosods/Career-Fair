@@ -75,7 +75,7 @@ footer {
   opacity: 85%;
 }
 
-/* .space-cort{
+ .space-cort{
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -87,7 +87,7 @@ footer {
   justify-content: space-between;
 }
 
-.cortina{
+ .cortina{
   position: relative;
   width: 49vw;
   height: 100vh;
@@ -106,7 +106,7 @@ footer {
   animation: moverDireita 2s cubic-bezier(1, 0.05, 1, 0.9);
   animation-delay: 5ms;
   left: 50vw;
-} */
+} 
 
 .pop-container {
   width: 35vw;
